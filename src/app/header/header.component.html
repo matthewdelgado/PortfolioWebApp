@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="hidden">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span class="header-title">Matthew Delgado's Portfolio</span>
+    <span class="spacer"></span>
+    <button mat-button (click)="navigate(item.route)" *ngFor="let item of menuItems">{{item.name}}</button>
+</mat-toolbar>
